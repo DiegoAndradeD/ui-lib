@@ -1,35 +1,24 @@
-# Personal UI Library (Headless + Tailwind v4)
+# ui-lib
 
-A highly customized, lightweight, and scalable React UI library built with a **Core/Wrapper architecture**.
+A personal, copy-and-paste React UI component library built with TypeScript and Tailwind CSS v4, inspired by the [shadcn/ui](https://ui.shadcn.com/) philosophy.
 
-This repository serves as my personal toolkit for UI components. It is built from scratch to avoid repeating code across different projects while maintaining maximum performance and full control over the DOM.
+## 🚀 Features
 
-## Motivation & Architecture
+* **Copy and Paste:** No npm packages to install for the components. Just copy the source code and own it.
+* **Modern Stack:** Built with React, TypeScript, and Vite.
+* **Tailwind v4:** Styled using the latest Tailwind CSS version without the need for a configuration file.
+* **Fully Customizable:** Since the code lives directly in your target project, you can tweak every detail without restrictions.
 
-Inspired by libraries like [TanStack](https://tanstack.com/) and [Shadcn UI](https://ui.shadcn.com/), this project follows a strict separation of concerns:
+## 📁 Structure
 
-1. **The Core (`src/core/`)**: 100% Vanilla TypeScript. It handles all complex business logic, event listeners, accessibility (A11y), intersection observers (for infinite scrolling), and state management. It is framework-agnostic.
-2. **The Wrapper (`src/react/`)**: A thin React layer that handles the DOM injection and styling using **Tailwind CSS v4**. It communicates with the Vanilla core without causing unnecessary React re-renders.
+* `src/components/ui/` - The home for all reusable, standalone components.
+* `src/lib/utils.ts` - Contains the essential `cn` utility function (using `clsx` and `tailwind-merge`) to merge classes dynamically.
+* `src/App.tsx` - The local showcase environment to test and view the components.
 
-### Why is this not on NPM?
-Currently, this is a personal ecosystem designed to speed up my own workflow. It is not published to the public NPM registry because it's tailored to my specific needs and design tokens. However, the architecture is fully prepared to be published in the future if the library grows to a mature state.
+## 🛠️ Local Development
 
-## Features
-* **Zero Heavy Dependencies:** No external dependencies or components, no heavy UI frameworks.
-* **Headless Logic:** The brain of the components lives in Vanilla TS.
-* **Tailwind v4:** Uses the latest CSS-first Tailwind engine with CSS variable tokens (Zinc palette) for seamless Light/Dark mode transitions.
-* **Built-in Smart Select:** A highly optimized combobox with native debounce and native infinite scrolling using `IntersectionObserver`.
+To run the showcase environment locally and build new components:
 
----
-
-## How to use this library in other projects
-
-Since this package is not published on NPM, we use the `npm pack` method to generate a local binary.
-
-### 1. Build and Pack the Library
-Clone this repository and run the following commands to generate the distributable package:
-
-```bash
-npm install
-npm run build
-npm pack
+1. Install dependencies:
+   ```bash
+   npm install
