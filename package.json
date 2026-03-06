@@ -1,17 +1,25 @@
 {
   "name": "ui-lib",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Personal UI Library with Core and React Wrappers",
+  "main": "./dist/ui-lib.umd.js",
+  "module": "./dist/ui-lib.es.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/ui-lib.es.js",
       "require": "./dist/ui-lib.umd.js"
     },
     "./core": {
+      "types": "./dist/core/index.d.ts",
       "import": "./dist/core/index.js"
     },
     "./react": {
+      "types": "./dist/react/index.d.ts",
       "import": "./dist/react/index.js"
     },
     "./style.css": "./dist/index.css"
@@ -30,6 +38,8 @@
     "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.27",
     "postcss": "^8.5.8",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3",
     "vite": "^7.3.1"
@@ -37,8 +47,6 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.2.1",
     "clsx": "^2.1.1",
-    "react": "^18.0.0 || ^19.0.0",
-    "react-dom": "^18.0.0 || ^19.0.0",
     "tailwind-merge": "^3.5.0"
   },
   "peerDependencies": {
