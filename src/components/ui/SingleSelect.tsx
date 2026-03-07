@@ -418,7 +418,7 @@ export default function SingleSelect({
                   setSearch(e.target.value);
                   setFocusedIndex(-1);
                 }}
-                placeholder="Buscar…"
+                placeholder="Search..."
                 className={cn(
                   "flex-1 bg-transparent text-sm outline-none",
                   !isAlt && "text-foreground placeholder:text-muted-foreground",
