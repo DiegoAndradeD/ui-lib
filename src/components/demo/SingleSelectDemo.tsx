@@ -32,7 +32,7 @@ export function SingleSelectDemo() {
           />
         </div>
         <p className="text-xs text-muted-foreground mt-2">
-          Valor selecionado:{" "}
+          Selected value:{" "}
           <strong className="text-foreground">{selectedValue || "None"}</strong>
         </p>
       </ComponentCard>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SingleSelectDemo, ButtonDemo } from "./components/demo";
+import { SingleSelectDemo, ButtonDemo, InputDemo } from "./components/demo";
 
 const COMPONENTS = [
   {
@@ -8,6 +8,7 @@ const COMPONENTS = [
     component: <SingleSelectDemo />,
   },
   { id: "button", name: "Button", component: <ButtonDemo /> },
+  { id: "input", name: "Input", component: <InputDemo /> },
 ];
 
 function App() {
