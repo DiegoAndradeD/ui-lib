@@ -4,6 +4,7 @@ import {
   ButtonDemo,
   InputDemo,
   MultiSelectDemo,
+  MarkdownEditorDemo,
 } from "./components/demo";
 
 const COMPONENTS = [
@@ -15,6 +16,11 @@ const COMPONENTS = [
   { id: "multi-select", name: "Multi Select", component: <MultiSelectDemo /> },
   { id: "button", name: "Button", component: <ButtonDemo /> },
   { id: "input", name: "Input", component: <InputDemo /> },
+  {
+    id: "markdown-editor",
+    name: "Markdown Editor",
+    component: <MarkdownEditorDemo />,
+  },
 ];
 
 function App() {
